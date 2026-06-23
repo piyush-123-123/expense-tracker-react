@@ -7,6 +7,7 @@ function Expenses(props) {
       {props.expenses.map((expense) => {
         return (
           <ExpenseItem
+          key={expense.id}
             id={expense.id}
             title={expense.title}
             date={expense.date}
