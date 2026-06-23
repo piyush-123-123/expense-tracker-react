@@ -22,6 +22,18 @@
   max-width: 100%;
 }
 
+
 .new-expense__actions {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  
+}
+button:hover {
+  background-color: #5c0a88;
+  transform: translateY(-2px);
+}
+
+button {
+  transition: all 0.2s ease;
 }
