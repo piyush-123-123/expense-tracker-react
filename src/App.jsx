@@ -8,10 +8,13 @@ function App() {
     { id: 3, title: "Pen", date: new Date(2023, 2, 10), price: 1 },
     { id: 4, title: "Laptop", date: new Date(2023, 9, 17), price: 200 },
   ];
+  const saveNewExpense=(expenseData)=>{
+    console.log(expenseData);
 
+  }
   return (
     <div>
-      <NewExpenses />
+      <NewExpenses onAddExpense={saveNewExpense}/>
       <Expenses expenses={expenses} />
     </div>
   );
