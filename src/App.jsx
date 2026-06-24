@@ -3,10 +3,8 @@ import Expenses from "./components/Expenses/Expenses";
 import NewExpenses from "./components/New Expenses/NewExpenses";
 
 function App() {
-  const [showForm,setShowForm]=useState(false);
-  const formOpenHandler=()=>{
-  setShowForm(true);
-  }
+  
+  
 
   const expenses = [
     { id: 1, title: "Insurance", date: new Date(2023, 7, 15), price: 100 },
@@ -26,11 +24,9 @@ function App() {
   }
   return (
     <div>
-      {showForm && <NewExpenses onAddExpense={addExpenseHandler}/>}
-      <Expenses expenses={expense} />
-
-      <button onClick={formOpenHandler}>Add Expense</button>
-  
+    
+      {<NewExpenses onAddExpense={addExpenseHandler}/>}
+      <Expenses expenses={expense} />      
     </div>
   );
 }
