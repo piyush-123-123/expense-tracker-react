@@ -1,0 +1,7 @@
+.expense-list{
+list-style: none;
+
+}
+.expense-list__fallback{
+    color: brown;
+}
