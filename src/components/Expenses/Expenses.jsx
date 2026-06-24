@@ -28,6 +28,13 @@ function Expenses(props) {
         )
       });
   }
+  if(filteredExpenses.length===1){
+    expenseContent=
+    <>
+    {expenseContent}
+    <p>Only one expense found.Please add more</p>
+    </>
+  }
 
   return (
     <Card className="expenses">
