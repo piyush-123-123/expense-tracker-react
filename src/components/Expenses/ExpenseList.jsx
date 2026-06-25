@@ -7,7 +7,7 @@ function ExpenseList(props){
         return <h2 className="expense-list__fallback">No Expense Found !!</h2>
     }
     return (
-        <uL className="expense-list">
+        <ul className="expense-list">
         {
             props.items.map((item)=>{
               return (
@@ -22,7 +22,7 @@ function ExpenseList(props){
             })
         }
 
-        </uL>
+        </ul>
     )
 
 }
